@@ -41,3 +41,24 @@ async function postProducts(product) {
     }
 }
 export{postProducts}
+
+//DELETE
+async function deleteProducts(id) {
+    try {
+        const response = await fetch ('http://localhost:3001/productos/'+id,{
+
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        })
+
+        const products = await response.json()
+        return products
+
+    } catch (error) {
+        console.error("Error al eliminar los productos")
+        throw error
+    }
+}
+export{deleteProducts}
