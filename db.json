@@ -1,0 +1,22 @@
+{
+  "productos": [
+    {
+      "id": "31f0",
+      "producto": "Helado Sundae Caramelo",
+      "precio": "500",
+      "stock": "60"
+    },
+    {
+      "id": "e9ec",
+      "producto": "Helado Sundae Chocolate",
+      "precio": "500",
+      "stock": "50"
+    },
+    {
+      "id": "3c7b",
+      "producto": "Helado Sundae Churchill",
+      "precio": "1500",
+      "stock": "70"
+    }
+  ]
+}
