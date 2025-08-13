@@ -10,6 +10,12 @@ const listaproductos = document.getElementById("listaproductos")
 //Funcion guarda
 btnAgregarProducto.addEventListener("click", async function(){
 
+    //Verificacion
+    if(!producto.value.trim() || !precio.value.trim() || !stock.value.trim()){
+        alert("Complete todos los campos")
+        return;
+    }
+
     const product ={
         producto:producto.value,
         precio:precio.value,
@@ -37,23 +43,33 @@ async function datosProductos() {
         let parrafoProducto = document.createElement("p")
         let btnEliminar = document.createElement("button")
         btnEliminar.textContent="Eliminar"
+        let btnEditar = document.createElement("button")
+        btnEditar.textContent="Editar"
 
         parrafoProducto.textContent=producto.producto + " - Precio: " + producto.precio+" - Stock: " + producto.stock
 
         listaproductos.appendChild(parrafoProducto)
         listaproductos.appendChild(btnEliminar)
+        listaproductos.appendChild(btnEditar)
 
+        //BOTON ELIMINAR
         btnEliminar.addEventListener("click", async function(){
 
             //PROCEDIMIENTO DE OPTENCIÓN ID
 
-
-            const eliminacion = await deleteProducts()
+           await deleteProducts(producto.id)
 
             listaproductos.removeChild(parrafoProducto)
             listaproductos.removeChild(btnEliminar)
 
         })
+
+        btnEditar.addEventListener("click", async function() {
+
+            ////PROCEDIMIENTO CON MODAL
+            
+        })
+
     } );
 
 

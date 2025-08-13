@@ -62,3 +62,25 @@ async function deleteProducts(id) {
     }
 }
 export{deleteProducts}
+
+//ACTUALIZAR PUT
+async function putProducts(product, id) {
+    try {
+        const response = await fetch ('http://localhost:3001/productos/'+id,{
+
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body:JSON.stringify(product)
+        })
+
+        const products = await response.json()
+        return products
+
+    } catch (error) {
+        console.error("Error al actualizar los productos")
+        throw error
+    }
+}
+export{putProducts}
