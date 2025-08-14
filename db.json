@@ -1,34 +1,10 @@
 {
   "productos": [
     {
-      "id": "31f0",
+      "id": "cac2",
       "producto": "Helado Sundae Caramelo",
-      "precio": "500",
-      "stock": "60"
-    },
-    {
-      "id": "e9ec",
-      "producto": "Helado Sundae Chocolate",
-      "precio": "500",
-      "stock": "50"
-    },
-    {
-      "id": "d43f",
-      "producto": "Helado Sundae",
-      "precio": "1600",
-      "stock": "45"
-    },
-    {
-      "id": "a600",
-      "producto": "Helado Sundae Churchill",
-      "precio": "1500",
-      "stock": "27"
-    },
-    {
-      "id": "1e2d",
-      "producto": "Cono Krunchy",
       "precio": "700",
-      "stock": "56"
+      "stock": "40"
     }
   ]
 }

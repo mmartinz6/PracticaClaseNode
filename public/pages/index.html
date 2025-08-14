@@ -4,24 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-    <h1>Cooperativa Dos Pinos</h1>
-    <h2>Gestión de productos</h2>
+<div>
+    <header class="header">
+        <a href="https://www.cooperativadospinos.com/"><img src="../img/dosPinos.png" alt="logo Dos Pinos"></a>
+    </header>
 
-    <label for="producto">Producto</label>
-    <input type="text" name="" id="producto">
-    <br>
-    <label for="precio">Precio</label>
-    <input type="number" name="" id="precio">
-    <br>
-    <label for="stock">Stock</label>
-    <input type="number" name="" id="stock">
-    <br>
-    <br>
-    <button id="btnAgregarProducto">Agregar producto</button>
+   <!--  <h1>Cooperativa Dos Pinos</h1> -->
 
-    <div id="listaproductos"></div>
+    <div class="contenedor">
+        <h2>Gestión de productos</h2>
+
+        <label for="producto">Producto</label>
+        <input type="text" name="" id="producto">
+        <br>
+        <label for="precio">Precio</label>
+        <input type="number" name="" id="precio">
+        <br>
+        <label for="stock">Stock</label>
+        <input type="number" name="" id="stock">
+        <br>
+        <br>
+        <button id="btnAgregarProducto">Agregar producto</button>
+    </div>
+
+    <div class="contenedor" id="listaproductos"></div>
+
+    <footer class="footer">
+        <p>© 2025 | Cooperativa Dos Pinos</p>
+    </footer>
 
     <script type="module" src="../js/index.js"></script>
 </body>
